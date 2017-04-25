@@ -1,0 +1,13 @@
+<h1>Find Anagrams!</h1>
+
+<%= erb :_primer_parcial %>
+<% if @new_word %>
+  <p>Estos son anagramas para '<%= @new_word %>':</p>
+  <p>
+    <% @all_canonical.each do |ana_word| %>
+      <ul><li> <%= "*_* #{ana_word.word} *_*"%></li></ul>  
+    <% end %>
+  </p>
+<% end %>
+
+
